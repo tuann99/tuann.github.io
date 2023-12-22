@@ -4,86 +4,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tuan's Website</title>
+  <title>Tuan's Portfolio</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body id="index-body">
+
   <header>
     <nav>
-      <!-- <a href="landing_page.html" class="logo">Tuan Nguyen</a> -->
-      <a href="landing_page.html"><img src="images/logo.jpg" width="100"></a>
+      <a href="index.html" class="logo">TN.</a>
+      <!-- <a href="landing_page.html"><img src="images/logo.jpg" width="100"></a> -->
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="html/about.html">About</a></li>
-        <li><a href="html/my_work.html">Portfolio</a></li>
+        <!-- <li><a href="html/my_work.html">Portfolio</a></li> -->
+        <li><a href="https://github.com/tuann99">GitHub</a></li>
         <li><a href="html/contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main id="main">
+
     <section id="welcome">
+
       <h1>Welcome to my portfolio!</h1>
-      <p>I'm Tuan, and I'm a pre-med student interested in the intersection between medicine and tech!</p>
-      <a href="html/about.html" class="btn">More About Me</a>
-      <a href="html/my_work.html" class="btn">View My Work</a>
+      <p>I'm Tuan, and I'm a recent MS graduate from the Johns Hopkins University!
+        <br>
+        I'm currently looking for a full-time software engineering position.
+      </p>
+      <div id="welcome-btns">
+        <a href="html/about.html" class="btn">More About Me</a>
+        <!-- <a href="html/my_work.html" class="btn">View My Work</a> -->
+      </div>
+      <br>
+
+      <div id="scroll-indicator">
+        <p>Scroll down to see my work</p>
+        <div class="scroll-downs">
+          <div class="mousey">
+            <div class="scroller"></div>
+          </div>
+        </div>
+      </div>
+
     </section>
     
     <section id="portfolio">
-      <h2>Recent Projects</h2>
-      <div class="project">
-        <img src="project1.jpg" alt="Project 1">
-        <h3>Project 1</h3>
+
+      <h2 id="projects-section-title">Recent Projects</h2>
+      <div id="project-1" class="project">
+        <!-- <img src="project1.jpg" alt="Project 1"> -->
+        <h3 class="project-title">The Interface for Metagenomic Analysis and Graphical Examination (IMAGE)</h3>
+        <span>A desktop application built on the Electron.js framework. This app simplifies the process of running various metagenomic analyses, and bundles many tools into a user-friendly interface.</span><br>
+        <span>Tech. stack: Python, JavaScript, HTML, CSS</span><br> 
         <a href="html/project_1.html" class="btn">View Project</a>
+        <a href="github" class="btn">GitHub Repo</a>
       </div>
 
-      <div class="project">
-        <img src="project2.sjpg" alt="Project 2">
-        <h3>Project 2</h3>
-        <a href="#" class="btn">View Project</a>
+      <div id="project-2" class="project">
+        <!-- <img src="project2.sjpg" alt="Project 2"> -->
+        <h3 class="project-title">Cancer Drug Database Website</h3>
+        <a href="html/project_2.html" class="btn">View Project</a>
       </div>
 
-      <div class="project">
-        <img src="project3.jpg" alt="Project 3">
-        <h3>Project 3</h3>
-        <a href="#" class="btn">View Project</a>
-      </div>
-
-      <div class="container">
-        <div class="column">
-          <h2>Carousel 1</h2>
-          <div class="carousel">
-            <img src="img1.jpg" alt="Image 1">
-            <img src="img2.jpg" alt="Image 2">
-            <img src="img3.jpg" alt="Image 3">
-          </div>
-        </div>
-        
-        <div class="column">
-          <h2>Carousel 2</h2>
-          <div class="carousel">
-            <img src="img4.jpg" alt="Image 4">
-            <img src="img5.jpg" alt="Image 5">
-            <img src="img6.jpg" alt="Image 6">
-          </div>
-        </div>
-        
-        <div class="column">
-          <h2>Carousel 3</h2>
-          <div class="carousel">
-            <img src="img7.jpg" alt="Image 7">
-            <img src="img8.jpg" alt="Image 8">
-            <img src="img9.jpg" alt="Image 9">
-          </div>
-        </div>
-      </div>
     </section>
+
   </main>
 
-  <footer>
-    <p>Updated 3/31/2023</p>
-  </footer>
 </body>
+<!-- <script src="js/script.js"></script> -->
 </html>
