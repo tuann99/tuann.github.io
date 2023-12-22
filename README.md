@@ -1,1 +1,3 @@
-work in progress dont judge lol
+# Personal portfolio website
+
+work in progress
