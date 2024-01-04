@@ -32,7 +32,7 @@ Yellow/Brown Palette
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
 
 body {
@@ -43,21 +43,15 @@ body {
   background-image: linear-gradient(to bottom right, #575554, #514a5b)
 }
 
-/* #index-body body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333;
-  background-image: linear-gradient(to bottom right, #575554, #514a5b)
-} */
-
 header {
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
   padding: 20px;
-}
-
-#main {
-  
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: #000 0px 1px 5px;
 }
 
 nav {
@@ -93,22 +87,17 @@ a:hover {
 }
 
 main {
-  /* max-width: 1000px; */
-  /* max-width: max-content; */
-  /* max-width: 1500px; */
   max-width: 100%;
   margin: 0 auto;
   /* padding: 40px; */
-  /* min-height: 10000px; */
 }
 
 section {
   margin-bottom: 60px;
-  /* min-height: 50vh; */
   min-height: 100vh;
-  display: flex; /* Make this a flex container */
-  flex-direction: column; /* Stack items vertically */
-  justify-content: center; /* Center items vertically */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center; 
 }
 
@@ -119,28 +108,36 @@ section {
   justify-content: center;
   background-color: #f2f2f2;
   text-align: center;
-  padding: 80px;
-  min-height: calc(100vh - 200px);
+  /* padding: 80px; */
+  padding-left: 80px;
+  padding-right: 80px;
+  /* min-height: calc(100vh - 200px); */
+  /* min-height: 100vh; */
 }
 
 #welcome h1 {
   font-size: 50px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 #welcome p {
   font-size: 50px;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
 }
 
 #scroll-indicator {
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
-  /* margin-top: 80px;  */
+  margin-top: 100px; 
   opacity: 0.5;
+  /* font-size: 10px; */
+  /* min-height: fit-content; */
+}
+
+#scroll-indicator p {
+  /* margin-top: 100px;  */
+  /* opacity: 0.5; */
   font-size: 10px;
-  min-height: fit-content;
+  /* font-style: oblique; */
+  /* min-height: fit-content; */
 }
 
 @keyframes fadeInOut {
@@ -158,19 +155,9 @@ section {
 .scroll-downs {
   /* animation: fadeInOut 4s infinite; */
   position: absolute;
-  /* bottom: 10px; */
   left: 50%;
-  /* width: 34px;
-  height: 55px; */
   transform: translate(-50%, -50%);
   color: #000;
-  /* font-size: 20px; */
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none; */
-  /* opacity: 0.5; */
 }
 
 .mousey {
@@ -189,7 +176,7 @@ section {
   border-radius: 25%;
   background-color: rgb(0, 0, 0);
   animation-name: scroll;
-  animation-duration: 2.2s;
+  animation-duration: 1.75s;
   animation-timing-function: cubic-bezier(.15,.41,.69,.94);
   animation-iteration-count: infinite;
 }
@@ -200,45 +187,35 @@ section {
   100% { transform: translateY(15px); opacity: 0;}
 }
 
-
-
 #portfolio {
-  /* background-color: #f2f2f2; */
   /* padding: 80px; */
-  padding-top: 80px;
-  padding-bottom: 80px;
+  /* padding-top: 80px; */
+  /* padding-bottom: 80px; */
   text-align: center;
   color: #fff;
+  padding-right: 40px;
+  padding-left: 40px;
 }
 
 #portfolio h2 {
-  /* text-align: center; */
   font-size: 50px;
-  /* color:hsl(from color h s l); */
   color: #fff;
 }
 
-
-
 #project project-title {
-  /* text-align: center; */
   font-size: 50px;
   color: #fff;
 }
 
 .btn {
   display: inline-block;
-  /* display: flex; */
-  /* justify-content: center;
-  align-items: center;
-  flex-direction: row; */
   margin-top: 20px;
   flex-direction: row;
   background-color: #333;
   color: #fff;
   padding: 12px 20px;
   border-radius: 4px;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.1s ease;
   
 }
 
@@ -248,27 +225,14 @@ section {
 }
 
 #project-1 {
-  /* background-color: #3b3945; */
-  padding: 80px;
+  background-color: #3b3945;
+  padding: 40px;
   width: 100%;
   box-sizing: border-box;
+  backdrop-filter: blur(10px);
   /* text-align: center; */
+  /* margin-top: 20px; */
 }
-
-
-
-.project h3 {
-  font-size: 24px;
-  margin-top: 20px;
-}
-
-.project a {
-  margin-top: 20px;
-}
-
-
-
-
 
 #about {
   background-color: #f2f2f2;
