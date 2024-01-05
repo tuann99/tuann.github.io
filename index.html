@@ -11,14 +11,14 @@
 
 <body id="index-body">
 
-  <header>
-    <nav>
+  <header id="header">
+    <nav id="nav">
       <a href="index.html" class="logo">TN.</a>
       <!-- <a href="landing_page.html"><img src="images/logo.jpg" width="100"></a> -->
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="html/about.html">About</a></li>
-        <!-- <li><a href="html/my_work.html">Portfolio</a></li> -->
+        <li><a href="html/portfolio.html">Portfolio</a></li>
         <li><a href="https://github.com/tuann99" target="_blank">My GitHub</a></li>
         <li><a href="html/contact.html">Contact</a></li>
       </ul>
@@ -36,37 +36,44 @@
       </div>
 
       <div id="scroll-indicator">
-        <p>Scroll down to see my work</p>
+        <p>Scroll down for recent projects</p>
         <div class="scroll-downs">
           <div class="mousey">
             <div class="scroller"></div>
           </div>
         </div>
       </div>
+
     </section>
     
     <section id="portfolio">
-      <h2 id="projects-section-title">Recent Projects</h2>
+      <!-- <h2 id="projects-section-title">Recent Projects</h2> -->
       <div id="project-1" class="project">
         <!-- <img src="project1.jpg" alt="Project 1"> -->
-        <h3 class="project-title">The Interface for Metagenomic Analysis and Graphical Examination (IMAGE)</h3>
-        <span>A desktop application built on the Electron.js framework. This app simplifies the process of running various metagenomic analyses, and bundles many tools into a user-friendly interface.</span><br>
-        <span>Tech stack: Python, JavaScript, HTML, CSS</span><br> 
+        <h2 class="project-title">The Interface for Metagenomic Analysis and Graphical Examination (IMAGE)</h2>
+        <span>A desktop application built on the Electron.js framework. This app simplifies the process of running various metagenomic analyses, and aims to bundle many tools into a user-friendly interface.</span><br>
+        <span>Tech used: HTML, CSS, JavaScript, Python</span><br> 
         <a href="html/project_1.html" class="btn">View Project</a>
-        <a href="https://github.com/tuann99/IMAGE" class="btn">GitHub Repo</a>
+        <a href="https://github.com/tuann99/IMAGE" class="btn" target="_blank">GitHub Repo</a>
       </div>
 
       <div id="project-2" class="project">
         <!-- <img src="project2.sjpg" alt="Project 2"> -->
-        <h3 class="project-title">Cancer Drug Database Website</h3>
+        <h2 class="project-title">Cancer Drug Database Website</h2>
         <span>Website for searching drug information.</span><br>
-        <span>Tech stack: Python, SQL, HTML, CSS</span><br>
+        <span>Tech used: HTML, CSS, Python, SQL</span><br>
         <a href="html/project_2.html" class="btn">View Project</a>
-        <a href="https://github.com/tuann99/database_query_website" class="btn">GitHub Repo</a>
+        <a href="https://github.com/tuann99/database_query_website" class="btn" target="_blank">GitHub Repo</a>
+      </div>
+
+      <div id="more-projects">
+        <a href="html/portfolio.html">View All Projects</a>
       </div>
     </section>
   </main>
-
+  <footer>
+    <p>Tuan Nguyen - 2023</p>
+  </footer>
 </body>
 <!-- <script src="js/script.js"></script> -->
 </html>
