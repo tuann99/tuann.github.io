@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <meta name="description" content="HTML file for full portfolio.">
+  <title>Portfolio</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -16,7 +17,7 @@
       <!-- <a href="landing_page.html"><img src="images/logo.jpg" width="100"></a> -->
       <ul>
         <li><a href="../index.html">Home</a></li>
-        <li><a href="../html/about.html">About</a></li>
+        <li><a href="../html/about.html">About Me</a></li>
         <li><a href="../html/portfolio.html">Portfolio</a></li>
         <li><a href="https://github.com/tuann99" target="_blank">My GitHub</a></li>
         <li><a href="../html/contact.html">Contact</a></li>
@@ -24,16 +25,30 @@
     </nav>
   </header>
   
-  <main>
-    <section id="project-1">
-      <p>Project 1</p>
-    </section>
+  <main id="main">
+    <div class="content-container">
+      <section id="portfolio">
+        <div class="header-container">
+          <hr class="line">
+          <h2>All Projects</h2>
+          <hr class="line">
+        </div>
+        
+        <div id="project-1" class="project">
+          <!-- <img src="project1.jpg" alt="Project 1"> -->
+          <h2 class="project-title">The Interface for Metagenomic Analysis and Graphical Examination (IMAGE)</h2>
+          <span>A desktop application built on the Electron.js framework. This app simplifies the process of running various metagenomic analyses, and aims to bundle many tools into a user-friendly interface.</span><br>
+          <span>Tech used: HTML, CSS, JavaScript, Python</span><br> 
+          <a href="https://github.com/tuann99/IMAGE" class="btn" target="_blank">View GitHub</a>
+        </div>
 
-    <section id="project-2">
-      <p>Project 2</p>
-    </section>
-
-    <section id="project-3">
-      <p>Project 3</p>
-    </section>
+        <div id="project-2" class="project">
+          <!-- <img src="project2.sjpg" alt="Project 2"> -->
+          <h2 class="project-title">Cancer Drug Database Website</h2>
+          <span>Website for searching drug information.</span><br>
+          <span>Tech used: HTML, CSS, Python, SQL</span><br>
+          <a href="https://github.com/tuann99/database_query_website" class="btn" target="_blank">View GitHub</a>
+        </div>
+      </section>
+    </div>
   </main>

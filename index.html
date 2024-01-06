@@ -4,76 +4,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tuan's Portfolio</title>
+  <meta name="description" content="Index HTML file for portfolio.">
+  <title>Portfolio Home</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body id="index-body">
-
   <header id="header">
     <nav id="nav">
       <a href="index.html" class="logo">TN.</a>
       <!-- <a href="landing_page.html"><img src="images/logo.jpg" width="100"></a> -->
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="html/about.html">About</a></li>
+        <li><a href="html/about.html">About Me</a></li>
         <li><a href="html/portfolio.html">Portfolio</a></li>
         <li><a href="https://github.com/tuann99" target="_blank">My GitHub</a></li>
-        <li><a href="html/contact.html">Contact</a></li>
+        <!-- <li><a href="html/contact.html">Contact</a></li> -->
       </ul>
     </nav>
   </header>
-
+  
   <main id="main">
-    <section id="welcome">
-      <h1>Welcome to my portfolio!</h1>
-      <p>I'm Tuan, and I'm a recent MS graduate from the Johns Hopkins University.</p>
+    <!-- <img class="background-wave" src="/images/layered-waves-haikei.svg" alt="SVG of waves for background"> -->
+    <!-- <img class="background-wave" src="/images/blurry-gradient-haikei.svg" alt="SVG of waves for background"> -->
+    <!-- <img class="background-wave" src="/images/blurry-gradient-haikei-blue.svg" alt="SVG of waves for background"> -->
+    <!-- <img class="background-wave" src="/images/stacked-waves-haikei.svg" alt="SVG of waves for background"> -->
 
-      <div id="welcome-btns">
-        <a href="html/about.html" class="btn">More About Me</a>
-        <!-- <a href="html/my_work.html" class="btn">View My Work</a> -->
-      </div>
-
-      <div id="scroll-indicator">
-        <p>Scroll down for recent projects</p>
-        <div class="scroll-downs">
-          <div class="mousey">
-            <div class="scroller"></div>
+    <div class="content-container">
+      <section id="welcome">
+        <h1>Welcome to my portfolio!</h1>
+        <p>My name is Tuan Nguyen, and I am an aspring UI/UX designer. I currently attend the Johns Hopkins University, where I am studying Biotechnology. <br>Click <a href="html/about.html">here</a> to learn more about me.</p>
+        
+        
+        <!-- <div id="welcome-btns">
+          <a href="html/about.html" class="btn">More About Me</a>
+          <a href="html/portfolio.html" class="btn">View My Work</a>
+        </div> -->
+        
+        <!-- <div id="scroll-indicator">
+          <p>Scroll down for recent projects</p>
+          <div class="scroll-downs">
+            <div class="mousey">
+              <div class="scroller"></div>
+            </div>
           </div>
+        </div> -->
+        
+      </section>
+      
+      <section id="portfolio">
+        <div class="header-container">
+          <hr class="line">
+          <h2>Featured Projects</h2>
+          <hr class="line">
         </div>
-      </div>
+        
+        <div id="project-1" class="project">
+          <!-- <img src="project1.jpg" alt="Project 1"> -->
+          <h2 class="project-title">The Interface for Metagenomic Analysis and Graphical Examination (IMAGE)</h2>
+          <span>A desktop application built on the Electron.js framework. This app simplifies the process of running various metagenomic analyses, and aims to bundle many tools into a user-friendly interface.</span><br>
+          <span>Tech used: HTML, CSS, JavaScript, Python</span><br> 
+          <a href="html/portfolio.html#project-1" class="btn">View Project</a>
+          <a href="https://github.com/tuann99/IMAGE" class="btn" target="_blank">View GitHub</a>
+        </div>
 
-    </section>
-    
-    <section id="portfolio">
-      <!-- <h2 id="projects-section-title">Recent Projects</h2> -->
-      <div id="project-1" class="project">
-        <!-- <img src="project1.jpg" alt="Project 1"> -->
-        <h2 class="project-title">The Interface for Metagenomic Analysis and Graphical Examination (IMAGE)</h2>
-        <span>A desktop application built on the Electron.js framework. This app simplifies the process of running various metagenomic analyses, and aims to bundle many tools into a user-friendly interface.</span><br>
-        <span>Tech used: HTML, CSS, JavaScript, Python</span><br> 
-        <a href="html/project_1.html" class="btn">View Project</a>
-        <a href="https://github.com/tuann99/IMAGE" class="btn" target="_blank">GitHub Repo</a>
-      </div>
+        <div id="project-2" class="project">
+          <!-- <img src="project2.sjpg" alt="Project 2"> -->
+          <h2 class="project-title">Cancer Drug Database Website</h2>
+          <span>Website for searching drug information.</span><br>
+          <span>Tech used: HTML, CSS, Python, SQL</span><br>
+          <a href="html/portfolio.html#project-2" class="btn">View Project</a>
+          <a href="https://github.com/tuann99/database_query_website" class="btn" target="_blank">View GitHub</a>
+        </div>
 
-      <div id="project-2" class="project">
-        <!-- <img src="project2.sjpg" alt="Project 2"> -->
-        <h2 class="project-title">Cancer Drug Database Website</h2>
-        <span>Website for searching drug information.</span><br>
-        <span>Tech used: HTML, CSS, Python, SQL</span><br>
-        <a href="html/project_2.html" class="btn">View Project</a>
-        <a href="https://github.com/tuann99/database_query_website" class="btn" target="_blank">GitHub Repo</a>
-      </div>
-
-      <div id="more-projects">
-        <a href="html/portfolio.html">View All Projects</a>
-      </div>
-    </section>
+        <!-- <div id="more-projects">
+          <a href="html/portfolio.html">View All Projects >></a>
+        </div> -->
+      </section>
+    </div>
   </main>
-  <footer>
+  <!-- <footer>
     <p>Tuan Nguyen - 2023</p>
-  </footer>
+  </footer> -->
 </body>
 <!-- <script src="js/script.js"></script> -->
 </html>
